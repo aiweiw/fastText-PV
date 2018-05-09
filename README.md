@@ -44,17 +44,19 @@ The PV-DM and PV-DBOW were described in the paper [1](#distributed-representatio
 train, use:
 
 $ ./fasttext PVDM -input train.txt -output model
+```
 
 where train.txt is a text file containing a training sentence per line along with the labels. By default, we assume that labels are words that are prefixed by the string __label__. This will output three files: model.bin, model.vec and labels.vec. Once the model was trained, you can obtain the k most likely labels for a piece of text.
 
+```
 infer, use:
 
 $ ./fasttext predictPVDM model.bin test.txt output k
+```
 
 where test.txt contains a piece of text (Chinese text should be segmented) to get paragraph vectors. Doing so will output the k most likely labels' vectors into the file: output.vec. The argument k is optional, and equal to 1 by default. 
 
 You can set parameters[-epoch 40, -dim 300, ...] to achieve better training and inference.
-```
 
 ### PV-DBOW
 
@@ -62,17 +64,19 @@ You can set parameters[-epoch 40, -dim 300, ...] to achieve better training and 
 train, use:
 
 $ ./fasttext PVDBOW -input train.txt -output model
+```
 
 where train.txt is a text file containing a training sentence per line along with the label. By default, we assume that labels are words that are prefixed by the string __label__. This will output three files: model.bin, model.output and labels.vec.
 
+```
 infer, use:
 
 $ ./fasttext predictPVDBOW model.bin test.txt output
+```
 
 where test.txt contains a piece of text (Chinese text should be segmented) to get paragraph vector.
 
 You can set parameters[-epoch 40, -dim 300, ...] to achieve better training and inference.
-```
 
 ## Full documentation
 
