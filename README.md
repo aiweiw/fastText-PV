@@ -146,7 +146,7 @@ The following arguments are mandatory:
 
 ## References
 
-Please cite [1](#distributed-representations-of-sentences-and-documents) if using for PV-DM or PV-DBOW.
+Please cite [1](#distributed-representations-of-sentences-and-documents) if using this code for PV-DM or PV-DBOW.
 
 ### Distributed Representations of Sentences and Documents
 
