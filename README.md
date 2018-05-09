@@ -146,7 +146,9 @@ The following arguments are mandatory:
 
 ## References
 
-Please cite [1](#distributed-representations-of-sentences-and-documents) if using for PVDM.
+Please cite [1](#distributed-representations-of-sentences-and-documents) if using for PV-DM or PV-DBOW.
+
+### Distributed Representations of Sentences and Documents
 
 [1] Quoc V. Le, Tomas Mikolov, [*Distributed Representations of Sentences and Documents*](https://arxiv.org/abs/1405.4053)
 
