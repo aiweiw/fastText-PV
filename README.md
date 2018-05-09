@@ -40,6 +40,7 @@ The PV-DM and PV-DBOW were described in the paper [1](#distributed-representatio
 
 ### PV-DM
 
+```
 train, use:
 
 $ ./fasttext PVDM -input train.txt -output model
@@ -53,9 +54,11 @@ $ ./fasttext predictPVDM model.bin test.txt output k
 where test.txt contains a piece of text (Chinese text should be segmented) to get paragraph vectors. Doing so will output the k most likely labels' vectors into the file: output.vec. The argument k is optional, and equal to 1 by default. 
 
 You can set parameters[-epoch 40, -dim 300, ...] to achieve better training and inference.
+```
 
 ### PV-DBOW
 
+```
 train, use:
 
 $ ./fasttext PVDBOW -input train.txt -output model
@@ -69,6 +72,7 @@ $ ./fasttext predictPVDBOW model.bin test.txt output
 where test.txt contains a piece of text (Chinese text should be segmented) to get paragraph vector.
 
 You can set parameters[-epoch 40, -dim 300, ...] to achieve better training and inference.
+```
 
 ## Full documentation
 
